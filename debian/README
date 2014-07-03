@@ -1,0 +1,13 @@
+The Debian Package nsenter
+----------------------------
+
+A simple package that provides nsenter from util-linux that's missing
+on Debian/Ubuntu.  Also, I've included the docker-enter script to easily
+spawn a process under a Docker container.
+
+Inspired by https://github.com/jpetazzo/nsenter
+
+The docker-enter script is directly taken from the above.  There appears
+to be no license on it.  However, util-linux is GPLv2.
+
+ -- Jack Neely <jjneely@42lines.net>  Thu, 03 Jul 2014 09:40:09 -0400

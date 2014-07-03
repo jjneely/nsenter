@@ -1,0 +1,16 @@
+Source: nsenter
+Section: admin
+Priority: optional
+Maintainer: Jack Neely <jjneely@42lines.net>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://git.kernel.org/cgit/utils/util-linux/util-linux.git/
+#Vcs-Git:
+#Vcs-Browser: https://git.kernel.org/cgit/utils/util-linux/util-linux.git/
+
+Package: nsenter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The nsenter binary from current util-linux versions
+ The nsenter binary from modern util-linux distributions which are
+ not used with Ubuntu/Debian.

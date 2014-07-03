@@ -1,0 +1,5 @@
+nsenter (2.24-42lines.trusty) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Jack Neely <jjneely@42lines.net>  Thu, 03 Jul 2014 09:40:09 -0400
