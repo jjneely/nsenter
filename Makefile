@@ -6,7 +6,7 @@ build: unpack
 	make LDFLAGS=-all-static nsenter ; \
 	cp nsenter ../
 
-unpack:
+unpack: util-linux-$(VERSION).tar.gz
 	tar xzf util-linux-$(VERSION).tar.gz
 
 install: build
@@ -20,7 +20,8 @@ clean:
 	rm -rf nsenter
 	rm -rf util-linux-$(VERSION)
 
-wget:
-	wget https://www.kernel.org/pub/linux/utils/util-linux/v$(VERSION)/util-linux-$(VERSION).tar.gz
+%:
+	wget https://www.kernel.org/pub/linux/utils/util-linux/v$(VERSION)/$@
 
-
+dsc: util-linux-$(VERSION).tar.gz
+	dpkg-source -b .
